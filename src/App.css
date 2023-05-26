@@ -1,0 +1,8 @@
+.light_mode {
+	color: rgb(4, 24, 42);
+}
+
+.dark_mode {
+	background-color: #1e1e1e;
+	color: #fff;
+}
