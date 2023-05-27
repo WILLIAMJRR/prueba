@@ -13,6 +13,7 @@
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .portada_img {
@@ -81,14 +82,9 @@ h2 {
 	text-decoration: none;
 	margin-top: 2rem;
 }
-.card_text a :hover{
-
-}
 
 @media (min-width: 768px) {
-	.portada {
-		margin: 0;
-	}
+
 	.title {
 		font-size: 4rem;
 	}
@@ -116,8 +112,8 @@ h2 {
 	}
 
 	.portada_img {
-		width: 550px;
-		height: 550px;
+		width: 450px;
+		height: 450px;
 		border-radius: 50%;
 		animation: float 5s cubic-bezier(0, 0, 0, 0) infinite;
 	}
@@ -162,7 +158,7 @@ h2 {
 		width: 100%;
 		height: 500px;
 		display: flex;
-		padding-left: 15rem;
+		padding-left: 20rem;
 		justify-content: left;
 		margin-bottom: 2rem;
 	}
@@ -171,7 +167,7 @@ h2 {
 		width: 100%;
 		height: 500px;
 		display: flex;
-		padding-right: 15rem;
+		padding-right: 20rem;
 		justify-content: right;
 		margin-bottom: 2rem;
 	}
@@ -180,7 +176,7 @@ h2 {
 		width: 100%;
 		height: 500px;
 		display: flex;
-		padding-left: 15rem;
+		padding-left: 20rem;
 		justify-content: left;
 		margin-bottom: 2rem;
 	}
@@ -189,7 +185,7 @@ h2 {
 		width: 100%;
 		height: 500px;
 		display: flex;
-		padding-right: 15rem;
+		padding-right: 20rem;
 		justify-content: right;
 		margin-bottom: 2rem;
 	}
