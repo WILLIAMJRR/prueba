@@ -6,7 +6,7 @@ import portada from '../../assets/img/emprendedores.jpg';
 import './about.css';
 const About = () => {
 	return (
-		<section className='about' id='Home'>
+		<section className='about' >
 			<div className='portada'>
 				<div className='portada_text'>
 					<h1 className='title'>
@@ -18,7 +18,7 @@ const About = () => {
 					<img className='portada_img' src={portada} alt='' />
 				</div>
 			</div>
-			<div className='cards' id='about'>
+			<div className='cards' id='about' >
 				<div className='card_one'>
 					<div className='card '>
 						<div className='card_text'>

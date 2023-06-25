@@ -9,7 +9,7 @@ import Footer from './components/footer/Footer';
 function App() {
 	const [theme, setTheme] = useState('dark');
 	return (
-		<div className='light_mode'>
+		<div className='light_mode'id='home'>
 			<Navbar key={'dark'} theme={theme} setTheme={setTheme} />
 			<About />
 			<Emprendedores />

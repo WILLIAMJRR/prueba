@@ -1,18 +1,17 @@
-import { useState } from 'react';
-import './emprendedores.css';
-import { useEffect } from 'react';
+import { useState } from "react";
+import "./emprendedores.css";
+import { useEffect } from "react";
 
 const Emprendedores = () => {
 	const [users, setUsers] = useState();
-	console.log(users);
-	const url = 'https://randomuser.me/api/?results=3';
+	const url = "https://randomuser.me/api/?results=3";
 	const getUsers = async () => {
 		try {
 			const response = await fetch(url);
 			const data = await response.json();
 			setUsers(data.results);
 		} catch (err) {
-			console.log('error');
+			console.log("error");
 		}
 	};
 
@@ -22,12 +21,24 @@ const Emprendedores = () => {
 
 	return (
 		<section className='section'>
-			<h2 className='subtitle'>Conoce a algunos de nuestros emprendedores destacados</h2>
+			<h2
+				className='subtitle'
+				id='emprendedores'
+			>
+				Conoce a algunos de nuestros emprendedores destacados
+			</h2>
 			<div className='emprededores_cards'>
-				{users?.map(user => (
-					<div key={user.login.uuid} className='emprededor_card'>
+				{users?.map((user) => (
+					<div
+						key={user.login.uuid}
+						className='emprededor_card'
+					>
 						<div className='card__img'>
-							<img className='card__image' src={user.picture.medium} alt='' />
+							<img
+								className='card__image'
+								src={user.picture.medium}
+								alt=''
+							/>
 						</div>
 						<div className='card__content'>
 							<h3>

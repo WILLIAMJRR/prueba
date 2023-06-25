@@ -1,16 +1,19 @@
 /* reset */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fredoka+One&display=swap");
 
 * {
 	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
 }
 
 body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
-	font-family: 'Comfortaa', cursive;
-	font-family: 'Fredoka One', cursive;
+	font-family: "Comfortaa", cursive;
+	font-family: "Fredoka One", cursive;
 	color: rgb(4, 24, 42);
 }
 

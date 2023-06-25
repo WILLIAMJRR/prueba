@@ -19,8 +19,7 @@ const Navbar = ({ setTheme, theme }) => {
 		setShow(newTheme);
 		const dark_mode = document.querySelector('.light_mode');
 
-		const isDarkTheme = theme === '.light_mode';
-		if (isDarkTheme) {
+		if (theme === '.light_mode') {
 			dark_mode.classList.add('dark_mode');
 			setTheme('.dark_mode');
 		} else {
@@ -42,16 +41,16 @@ const Navbar = ({ setTheme, theme }) => {
 						)}
 					</button>
 					<div className={`nav_link ${clicked ? 'active' : ''}`}>
-						<a onClick={handleClick} href='#home'>
+						<a  href='#home'>
 							Home
 						</a>
-						<a onClick={handleClick} href='#about'>
+						<a  href='#about'>
 							About
 						</a>
-						<a onClick={handleClick} href='#'>
+						<a  href='#emprendedores'>
 							Emprendedores
 						</a>
-						<a onClick={handleClick} href='#'>
+						<a  href='#contacto'>
 							Contacto
 						</a>
 					</div>
